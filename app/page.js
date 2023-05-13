@@ -3,12 +3,10 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div className="main">
-      {/* <div className="navbar">
-        <Link href="/">홈</Link>
-        <Link href="/productList">PorductList</Link>
-      </div> */}
-      <h4 className="title">지오 Shop</h4>
-      <p className="title-sub">made by gio</p>
+      <h4 className="slider">캐러셀 들어갈 자리</h4>
+      <p className="title">인기상품</p>
+      <p className="title">세일상품</p>
+      <p className="title">신규상품</p>
     </div>
   );
 }
