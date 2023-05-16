@@ -4,13 +4,22 @@ body{
   color: black;
 }
 
+ul {
+  list-style: none;
+}
+
 .main {
-  text-align: center;
-  margin: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .title {
-  text-align: center;
 }
 
 .cart-item {
@@ -30,11 +39,17 @@ body{
   border-radius: 8px;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header{
   padding-top: 25px;
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 840px;
 }
 
 .logo-wrapper {
@@ -67,15 +82,19 @@ body{
 }
 
 .search-wrapper {
+  display: flex;
+  flex-grow: 1;
   margin: 0 20px;
 }
 
 .search-input {
   border: 1px solid #C79A3B;
   height: 24px;
+  flex-grow: 1;
   margin-right: 8px;
   background: none;
-  color: #757575
+  color: #757575;
+  outline: none;
 }
 
 .search-button {
@@ -87,6 +106,15 @@ body{
 
 .header-icons {
   display: flex;
+}
+
+.header-icons > ul {
+  display: flex;
+  padding: 0;
+}
+
+.header-icons > ul > li {
+  margin-left: 8px;
 }
 
 .navbar {
@@ -102,6 +130,12 @@ body{
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+.slider{
+  position: relative;
+  width: 100%;
+  height: 220px;
 }
 
 .champ-img {
